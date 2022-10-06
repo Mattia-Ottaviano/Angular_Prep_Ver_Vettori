@@ -1,6 +1,11 @@
-<ul>
-    <li *ngFor="let macc of macchine">
-    <app-macchina [macc] = "macc">
-    </app-macchina>
-    </li>
-</ul>
+<div class="card-deck"> 
+
+    <div class="card"
+        *ngFor="let macc of macchine">
+        <app-macchina [macc] = "macc">
+        </app-macchina>
+    </div>
+
+</div>
+
+
