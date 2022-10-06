@@ -7,7 +7,10 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class MacchinaComponent implements OnInit {
   @Input() macc: string = "";
-  constructor() { }
+  pezziAuto: string[];
+  constructor() {
+    this.pezziAuto = ["viti", " bulloni", " chiodi", " ferro"]
+   }
 
   ngOnInit(): void {
   }
